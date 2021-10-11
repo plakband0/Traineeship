@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+           <title>HTML Tutorial</title>
+
+           <script>
+               function telop(eerste, tweede){
+               //alert('telop is aangeroepen met de waarden' + eerste + 'en'+tweede);
+               var resultaat = eerste + tweede
+               return resultaat;
+               }
+               
+
+               function delen(arg1,arg2){
+                   var arg3 = arg1/arg2;
+                   return arg3;
+               }
+
+              // alert(delen(10,5))
+
+
+
+
+               var a = 9;
+               var b = 12;
+               console.log('a =' +a);
+               console.log(b);
+
+
+               a=23
+               console.log('a =' +a);
+
+               var c = a + b;
+               console.log('c =' +c);
+
+              var resultaattelop =  telop(1,5);
+
+             // alert(resultaattelop)
+
+           </script>
+    </head>
+    
+    <body>
+
+<h1>This is a heading</h1>
+<p id="mijnid">This is a paragraph.</p>
+
+<script>
+    var pTekst = document.getElementById('mijnid').innerText;
+    //alert(pTekst);
+
+
+    document.getElementById('mijnid').innerText = "Mijn naam is Ruben";
+    document.getElementById('mijnid').style.color = 'green';
+
+    function reageerOpButton(){
+      var invoer1 = document.getElementById('invoer1').value
+      alert(invoer1)
+    }
+
+
+
+
+
+</script>
+<input type="number" id="invoer1">
+<button onclick="reageerOpButton" >Click me</button>
+
+
+
+</body>
+</html>
